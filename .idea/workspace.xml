@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b446586-4f3c-4f8d-b752-562f66e90697" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/javaoo/PrincipalEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/javaoo/entities/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/javaoo/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/javaoo/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/javaoo/PrincipalEx2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/javaoo/entities/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/semoo/Retangulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PrincipalEx2">
     <configuration name="PrincipalEx1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.javaoo.PrincipalEx1" />
       <module name="java-oo" />
@@ -45,8 +44,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrincipalEx2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.javaoo.PrincipalEx2" />
+      <module name="java-oo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.javaoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Retangulo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.semoo.Retangulo" />
+      <module name="java-oo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.semoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrincipalEx2" />
+        <item itemvalue="Application.Retangulo" />
         <item itemvalue="Application.PrincipalEx1" />
       </list>
     </recent_temporary>
@@ -72,5 +99,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

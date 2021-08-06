@@ -13,9 +13,7 @@ public class Product {
     public void setName(String nome){
         this.name = nome;
     }
-    public String getNAME(){
-       return name;
-    }
+    public String getNAME(){return name;}
 
     public void setPrice(double price){
         this.price = price;

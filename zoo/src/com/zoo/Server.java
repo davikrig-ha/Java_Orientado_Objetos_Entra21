@@ -1,9 +1,6 @@
 package com.zoo;
 
-import com.zoo.entities.Animal;
-import com.zoo.entities.Cachorro;
-import com.zoo.entities.Gato;
-import com.zoo.entities.Passaro;
+import com.zoo.entities.*;
 
 public class Server {
     public static void main(String[] args) {
@@ -59,6 +56,24 @@ public class Server {
         }
 
         cachorro.emitirSom();
+
+        System.out.println(" ");
+
+        Animal girafa = new Girafa("mara", "Girafa", 60, "Femea");
+
+        System.out.println("Olá, seu animal é um " + girafa.getEspecie() +
+                " O nome dele é " + girafa.getNome() + " e Tem "
+                + girafa.getIdade() +  " Meses" + " Ele é um " + girafa.getSexo());
+
+        if (girafa.isAdulto()){
+            System.out.println("É adulto");
+        }
+        else {
+            System.out.println("É filhote");
+        }
+
+        girafa.emitirSom();
+
 
     }
 }

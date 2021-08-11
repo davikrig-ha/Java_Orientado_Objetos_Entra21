@@ -1,15 +1,18 @@
 package com.Empresa.entities;
 
-public abstract class Funcionario {
+public class Funcionario {
 
-    private String nome;
-    private int horas;
-    private double valorHora;
+      protected String nome;
+      protected Integer valorHora;
+      protected Double horas;
 
-    public Funcionario(String nome, int horas, double valorHora) {
+    public Funcionario() {
+    }
+
+    public Funcionario(String nome, Integer valorHora, Double horas) {
         this.nome = nome;
-        this.horas = horas;
         this.valorHora = valorHora;
+        this.horas = horas;
     }
 
     public String getNome() {
@@ -20,24 +23,24 @@ public abstract class Funcionario {
         this.nome = nome;
     }
 
-    public int getHoras() {
-        return horas;
-    }
-
-    public void setHoras(int horas) {
-        this.horas = horas;
-    }
-
-    public double getValorHora() {
+    public Integer getValorHora() {
         return valorHora;
     }
 
-    public void setValorHora(double valorHora) {
+    public void setValorHora(Integer valorHora) {
         this.valorHora = valorHora;
     }
 
-    public abstract double salario();
+    public Double getHoras() {
+        return horas;
+    }
 
-    public abstract double bonus();
+    public void setHoras(Double horas) {
+        this.horas = horas;
+    }
+
+    public Double pagamento(){
+        return this.horas * this.valorHora;
+    }
 
 }

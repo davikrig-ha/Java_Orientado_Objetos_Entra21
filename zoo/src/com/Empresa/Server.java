@@ -15,50 +15,43 @@ public class Server {
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
 
-        List<Funcionario> fl = new ArrayList<>();
-
+        List<Funcionario> employeeList = new ArrayList<>();
+        System.out.println("Enter the number of employees");
         int n = scanner.nextInt();
 
-        for (int i = 0; i < n; i++){
-            System.out.println("Funcionario " + i + " data: ");
-            System.out.println("Tercerizado (y/n) ");
+        for (int i = 0; i < n; i++) {
+            System.out.println("Employee " + i + " data:");
+            System.out.println("Outsourced (y/n)");
             char ch = scanner.next().charAt(0);
-            System.out.println("Name: ");
+            System.out.print("Name: ");
             scanner.next();
-
             String nome = scanner.nextLine();
 
-            System.out.println("Horas: ");
-
+            System.out.print("Hours: ");
             int horas = scanner.nextInt();
 
-            System.out.println("Valor por hora");
+            System.out.println("Value per hour");
             double valorHora = scanner.nextDouble();
 
-            if (ch == 'y'){
-                System.out.println("Bonus ");
+            if(ch == 'y'){
+                System.out.print("Aditional charge: ");
                 double bonus = scanner.nextDouble();
-                fl.add(new Terceirizado(nome, valorHora, horas, bonus));
-
-            }else {
-                fl.add(new Funcionario(nome, valorHora, horas));
-            }
-
-            System.out.println(
-            );
-
-            System.out.println("salarios");
-
-
-            for (Funcionario funcionario : fl){
-
-
+                employeeList.add(new Terceirizado(nome, horas, valorHora, bonus));
+            }else{
+                employeeList.add(new Funcionario(nome, horas, valorHora));
             }
         }
 
+        System.out.println();
+        System.out.print("Payments: ");
 
-
+        for (Funcionario employee : employeeList){
+            System.out.println(employee.getNome() + " - $ " + String.format("%.2f", employee.pagamento()));
+        }
         scanner.close();
+
+
+
 
     }
 
